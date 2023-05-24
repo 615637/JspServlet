@@ -41,7 +41,7 @@
 					 (lyj/list.jsp 실행)
 					 el과 jstl을 사용해서 보여준다.
 				 -->
-				<li><a href="#">게시판</a></li>
+				<li><a href="asdf.bat">mybatis</a></li>
 			</ul>
 
 

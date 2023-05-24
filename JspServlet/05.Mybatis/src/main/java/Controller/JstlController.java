@@ -10,6 +10,8 @@ import javax.servlet.http.HttpServlet;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 
+import oracle.jdbc.driver.OracleDriver;
+
 /**
  * Servlet implementation class JstlController
  */
@@ -18,6 +20,8 @@ public class JstlController extends HttpServlet {
 	//doGet, doPost 두 가지가 합쳐진 버전의 메소드
 	//service(get, post의 모든 요청을 받음)
 	RequestDispatcher rd;
+	
+	
 	@Override
 	protected void service(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
 		System.out.println(req.getServletPath());
