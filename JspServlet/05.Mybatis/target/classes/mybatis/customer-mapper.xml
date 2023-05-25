@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper
+  PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+  "https://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="cu">
+	<select id="list" resultType="customer.CustomerVO">
+		select * from customer
+	</select>
+	<select id="detail" resultType="customer.CustomerVO">
+		select * from customer where id = #{id}
+	</select>
+	
+	<update id="update">
+		update customer set email = #{email}, phone=#{phone}
+		where id=#{id}
+	</update>
+	<insert id="insert">
+		insert into customer(id, name, email, phone)
+		values (#{id}, #{name}, #{email}, #{phone})
+	</insert>
+</mapper>
